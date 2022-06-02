@@ -46,9 +46,7 @@ int[,] DeleteRowAndColumn(int[,] matrix, int row,int column)
         for (int j=0; j<matrix.GetLength(1);j++)
             {
                 if(i==row || j==column)
-                {
                   matrix[i,j] = 0;
-                }  
             }
     return(matrix);
 }
@@ -65,7 +63,7 @@ Console.WriteLine("\nНайдем координаты элемента с ми�
 coordinatesMinValue = GetCoordinatesMinValue(matrix);
 
 int minValueInMatrix = matrix[coordinatesMinValue[0,0],coordinatesMinValue[0,1]];
-Console.WriteLine($"Минимальный элемент в матрице равен {minValueInMatrix}. Координаты в массиве ряд {coordinatesMinValue[0,0]+1}, колонка {coordinatesMinValue[0,1]+1}.");
+Console.WriteLine($"Минимальный элемент в матрице равен {minValueInMatrix}. Координаты в массиве: ряд {coordinatesMinValue[0,0]+1}, колонка {coordinatesMinValue[0,1]+1}.");
 
 Console.WriteLine("\nУдалим строку и столбец на пересечении с наименьшим элементом.");
 matrix = DeleteRowAndColumn(
