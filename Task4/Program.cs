@@ -6,9 +6,6 @@ int[,] GetPascalTriangle(int triangleHeight)
     int[,] pascalTriangle = new int[triangleHeight,triangleWidth];
 
     pascalTriangle[0,triangleWidth/2] = 1;
-   // pascalTriangle[triangleHeight-1,0]  = 1;
-   // pascalTriangle[triangleHeight-1,triangleWidth-1]  = 1;
-
 
     for(int i=1;i<pascalTriangle.GetLength(0);i++)
         {
